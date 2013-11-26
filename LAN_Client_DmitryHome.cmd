@@ -1,1 +1,0 @@
-start .\Binaries\win32\UDK.exe 89.179.244.255?Name=CLIENT?Team=2 -windowed -resx=1024 -resy=768 -log -ConsolePosX=1024 -ConsolePosY=0
