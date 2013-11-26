@@ -1,0 +1,1 @@
+start .\Binaries\win32\UDK.exe -windowed -resx=1024 -resy=768

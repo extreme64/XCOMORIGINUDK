@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>True</DebugSymbols>
+    <UccUseUnpublished>False</UccUseUnpublished>
+    <UccMultiPackageBuild>False</UccMultiPackageBuild>
+    <BuildArgs>
+    </BuildArgs>
+    <UccPackageOrder>Classes</UccPackageOrder>
+    <OverrideScriptPath>True</OverrideScriptPath>
+    <UccScriptsPath>..\..\..\UDKGame\Script</UccScriptsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">Win32</Platform>
+    <ProductVersion>1.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{eb63e017-a2f5-4667-bbba-9815c2649aa1}</ProjectGuid>
+    <OutputType>UserMod</OutputType>
+    <ProjectType>UnrealScript</ProjectType>
+    <RootNamespace>x_com</RootNamespace>
+    <AssemblyName>x_com</AssemblyName>
+    <Name>x-com</Name>
+    <TargetGame>UnrealEngine 3 Licensee</TargetGame>
+    <BaseContentPath>..\..\Engine\Content</BaseContentPath>
+    <GameContentPath>..\..\UDKGame\Content</GameContentPath>
+    <PackageExtensions>.upk;.udk</PackageExtensions>
+    <UccPath>..\..\Binaries\Win64\UDK.exe</UccPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|Win32' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <UccUseUnpublished>False</UccUseUnpublished>
+    <UseUnpublished>False</UseUnpublished>
+    <ForceWindowedMode>True</ForceWindowedMode>
+    <WindowWidth>1024</WindowWidth>
+    <WindowHeight>768</WindowHeight>
+    <ShowLogWindow>False</ShowLogWindow>
+    <LogToFile>False</LogToFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|Win32' ">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <UccUseUnpublished>False</UccUseUnpublished>
+    <UseUnpublished>False</UseUnpublished>
+    <ForceWindowedMode>False</ForceWindowedMode>
+    <ShowLogWindow>False</ShowLogWindow>
+    <LogToFile>False</LogToFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>True</DebugSymbols>
+    <UccUseUnpublished>False</UccUseUnpublished>
+    <UccMultiPackageBuild>False</UccMultiPackageBuild>
+    <BuildArgs>
+    </BuildArgs>
+    <UccPackageOrder>Classes;Core;Engine;GameFramework;GFxUI;GFxUIEditor;IpDrv;OnlineSubsystemPC;OnlineSubsystemSteamworks;UDKBase;classes;UIMiracle;UnrealEd;UTEditor;UTGame;UTGameContent;X-COM</UccPackageOrder>
+    <OverrideScriptPath>True</OverrideScriptPath>
+    <UccScriptsPath>..\..\UDKGame\Script</UccScriptsPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="*\Classes\*.uc" />
+    <Content Include="**\*.uci" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Core\" />
+    <Folder Include="Core\Classes\" />
+    <Folder Include="CustomGame\" />
+    <Folder Include="CustomGame\Classes\" />
+    <Folder Include="Engine\" />
+    <Folder Include="Engine\Classes\" />
+    <Folder Include="ExoEditor\" />
+    <Folder Include="ExoEditor\Classes\" />
+    <Folder Include="GameFramework\" />
+    <Folder Include="GameFramework\Classes\" />
+    <Folder Include="GFxUIEditor\" />
+    <Folder Include="GFxUIEditor\Classes\" />
+    <Folder Include="GFxUI\" />
+    <Folder Include="GFxUI\Classes\" />
+    <Folder Include="IpDrv\" />
+    <Folder Include="IpDrv\Classes\" />
+    <Folder Include="MobileGame\" />
+    <Folder Include="MobileGame\Classes\" />
+    <Folder Include="OnlineSubsystemGameCenter\" />
+    <Folder Include="OnlineSubsystemGameCenter\Classes\" />
+    <Folder Include="OnlineSubsystemPC\" />
+    <Folder Include="OnlineSubsystemPC\Classes\" />
+    <Folder Include="OnlineSubsystemSteamworks\" />
+    <Folder Include="OnlineSubsystemSteamworks\Classes\" />
+    <Folder Include="SubstanceAirEd\" />
+    <Folder Include="SubstanceAirEd\Classes\" />
+    <Folder Include="SubstanceAir\" />
+    <Folder Include="SubstanceAir\Classes\" />
+    <Folder Include="SwordEditor\" />
+    <Folder Include="SwordEditor\Classes\" />
+    <Folder Include="UDKBase\" />
+    <Folder Include="UDKBase\classes\" />
+    <Folder Include="UnrealEd\" />
+    <Folder Include="UnrealEd\Classes\" />
+    <Folder Include="UTEditor\" />
+    <Folder Include="UTEditor\Classes\" />
+    <Folder Include="UTGameContent\" />
+    <Folder Include="UTGameContent\Classes\" />
+    <Folder Include="UTGame\" />
+    <Folder Include="UTGame\Classes\" />
+    <Folder Include="WinDrv\" />
+    <Folder Include="WinDrv\Classes\" />
+    <Folder Include="X-COM_DB\" />
+    <Folder Include="X-COM_DB\Classes\" />
+    <Folder Include="X-COM_GAME\" />
+    <Folder Include="X-COM_GAME\Classes\" />
+    <Folder Include="X-COM_Geo\" />
+    <Folder Include="X-COM_Geo\Classes\" />
+    <Folder Include="X-COM_SUSANINPF\" />
+    <Folder Include="X-COM_SUSANINPF\Classes\" />
+    <Folder Include="X-COM_Tactics\" />
+    <Folder Include="X-COM_Tactics\Classes\" />
+    <Folder Include="X-COM_TACTICS_MULTIPLAYER\" />
+    <Folder Include="X-COM_TACTICS_MULTIPLAYER\Classes\" />
+    <Folder Include="XCOMGame\" />
+    <Folder Include="XCOMGame\Classes\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\PixelMine\UnrealScript.targets" />
+</Project>

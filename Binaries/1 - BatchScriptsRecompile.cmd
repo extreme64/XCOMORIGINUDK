@@ -1,0 +1,1 @@
+UDKLift.exe make -full

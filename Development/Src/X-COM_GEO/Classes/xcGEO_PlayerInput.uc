@@ -1,0 +1,1 @@
+class xcGEO_PlayerInput extends X_COM_PlayerInput within xcGEO_PlayerController;

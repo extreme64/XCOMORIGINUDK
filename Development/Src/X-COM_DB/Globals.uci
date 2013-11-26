@@ -1,0 +1,7 @@
+/**
+ * X-Com:Origins global definies
+ */
+
+`define XCOMDB_InitString(aString,aStrLen) {`aString=class'XCOMDB_Defines'.static.initString(`aStrLen);}
+`define XCOMDB_String2Vec(aStr,aVec) {`aVec=class'XCOMDB_Defines'.static.string2Vec(`aStr);}
+`define XCOMDB_String2Rot(aStr,aRot) {`aRot=class'XCOMDB_Defines'.static.string2Rot(`aStr);}

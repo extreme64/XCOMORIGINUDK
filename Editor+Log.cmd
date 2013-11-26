@@ -1,0 +1,1 @@
+start .\Binaries\UDKLIft.exe editor -log -ConsolePosX=0 -ConsolePosY=0

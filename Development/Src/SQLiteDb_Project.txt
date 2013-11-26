@@ -1,0 +1,11 @@
+﻿Ok, this project right now have only links to databases. 
+And when you click on any of them it will be opened in 
+SQLiteAdministrator (if you set as default handler for *.s3db files)
+
+But to have it inside VS is already a handy stuff. 
+
+In future this project whould open this files in VS2010
+as system.data.sqlite.org project will done with their new version.
+
+In a distant paradise futuew we will have linq t4 templates to autogenerate 
+code for db.

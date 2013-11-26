@@ -1,0 +1,1 @@
+start .\Binaries\win32\UDK.exe -fullscreen -resx=1920 -resy=1080

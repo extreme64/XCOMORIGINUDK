@@ -1,0 +1,16 @@
+/**
+ * X-Com:Origins global definies
+ */
+
+`define XCOM_InitString(aString,aStrLen) {`aString=class'X_COM_Defines'.static.initString(`aStrLen);}
+`define XCOM_String2Vec(aStr,aVec) {`aVec=class'X_COM_Defines'.static.string2Vec(`aStr);}
+`define XCOM_String2Rot(aStr,aRot) {`aRot=class'X_COM_Defines'.static.string2Rot(`aStr);}
+
+/** Unit testing assertions*/
+
+`define utAssertTrue(condition, msg)                    `log("UNIT_TEST{Location:"$`Location$"}{Message:"$`msg$"}{AssertTrue:"$`condition$"}")
+`define utAssertFalse(condition, msg)                   `log("UNIT_TEST{Location:"$`Location$"}{Message:"$`msg$"}{AssertFalse:"$`condition$"}")
+`define utAssertIntEqual(lvalue, rvalue, msg)           `log("UNIT_TEST{Location:"$`Location$"}{Message:"$`msg$"}{AssertIntEqual:"$`lvalue$","$`rvalue$"}")
+`define utAssertAlmostEqual(lvalue, rvalue, delta, msg) `log("UNIT_TEST{Location:"$`Location$"}{Message:"$`msg$"}{AssertAlmostEqual:"$`lvalue$","$`rvalue$","$`delta$"}")
+`define utAssertStringEqual(lvalue, rvalue, msg)           `log("UNIT_TEST{Location:"$`Location$"}{Message:"$`msg$"}{AssertStringEqual:"$`lvalue$"|=|=|"$`rvalue$"}")
+`define utAssertVectorAlmostEqual(lvalue, rvalue, delta, msg)   `log("UNIT_TEST{Location:"$`Location$"}{Message:"$`msg$"}{AssertVectorAlmostEqual:"$`lvalue$","$`rvalue$","$`delta$"}")

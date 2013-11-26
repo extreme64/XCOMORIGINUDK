@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <UccPath>..\..\Binaries\Win32\UDK.exe</UccPath>
+    <UccUserPath>
+    </UccUserPath>
+    <ReferenceSourcePath>
+    </ReferenceSourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <StartProgram>..\..\Binaries\Win32\UDK.exe</StartProgram>
+    <CmdArgs>
+    </CmdArgs>
+    <LoadMapAtStartup>True</LoadMapAtStartup>
+    <StartupMap>x-com_FrontEnd.udk</StartupMap>
+    <LoadGameType>True</LoadGameType>
+    <UserGameType>X-COM_GAME.X_COM_GameInfo</UserGameType>
+    <NoSound>False</NoSound>
+    <NoStartupMovies>True</NoStartupMovies>
+    <UseUnpublished>False</UseUnpublished>
+    <ForceWindowedMode>True</ForceWindowedMode>
+    <WindowWidth>1024</WindowWidth>
+    <WindowHeight>768</WindowHeight>
+    <ShowLogWindow>True</ShowLogWindow>
+    <LogWindowX>0</LogWindowX>
+    <LogWindowY>0</LogWindowY>
+    <LogToFile>False</LogToFile>
+    <LogFile>
+    </LogFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <StartProgram>..\..\Binaries\Win32\UDK.exe</StartProgram>
+    <CmdArgs>
+    </CmdArgs>
+    <LoadMapAtStartup>True</LoadMapAtStartup>
+    <StartupMap>x-com_FrontEnd.udk</StartupMap>
+    <LoadGameType>True</LoadGameType>
+    <UserGameType>x-com.X_COM_GameInfo</UserGameType>
+    <NoSound>False</NoSound>
+    <NoStartupMovies>False</NoStartupMovies>
+    <UseUnpublished>False</UseUnpublished>
+    <ForceWindowedMode>True</ForceWindowedMode>
+    <WindowWidth>1024</WindowWidth>
+    <WindowHeight>768</WindowHeight>
+    <ShowLogWindow>True</ShowLogWindow>
+    <LogWindowX>0</LogWindowX>
+    <LogWindowY>0</LogWindowY>
+    <LogToFile>False</LogToFile>
+    <LogFile>
+    </LogFile>
+  </PropertyGroup>
+</Project>
